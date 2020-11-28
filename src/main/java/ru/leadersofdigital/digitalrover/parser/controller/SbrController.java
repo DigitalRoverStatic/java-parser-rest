@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.leadersofdigital.digitalrover.parser.model.SbrDto;
 import ru.leadersofdigital.digitalrover.parser.service.SbrService;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -52,5 +53,10 @@ public class SbrController {
         IntStream.range(0, 23).forEach(hour ->
                 sbrService.saveToDb(localDate, hour)
         );
+    }
+
+    @PostMapping("/parseCsv")
+    public void parseCsv() throws IOException {
+        sbrService.parseCsv();
     }
 }

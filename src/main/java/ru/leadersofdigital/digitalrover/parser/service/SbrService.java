@@ -4,6 +4,9 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import de.siegmar.fastcsv.reader.CsvContainer;
+import de.siegmar.fastcsv.reader.CsvReader;
+import de.siegmar.fastcsv.reader.CsvRow;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
@@ -14,12 +17,18 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.leadersofdigital.digitalrover.parser.domain.model.ConsumptionEntity;
+import ru.leadersofdigital.digitalrover.parser.domain.model.ConsumptionHistory;
+import ru.leadersofdigital.digitalrover.parser.domain.repository.ConsumptionHistoryRepository;
 import ru.leadersofdigital.digitalrover.parser.domain.repository.ConsumptionRepository;
+import ru.leadersofdigital.digitalrover.parser.domain.repository.SubjectRepository;
 import ru.leadersofdigital.digitalrover.parser.exception.CustomException;
 import ru.leadersofdigital.digitalrover.parser.model.SbrDto;
 import ru.leadersofdigital.digitalrover.parser.model.SbrNodeDto;
 import ru.leadersofdigital.digitalrover.parser.model.SubAreaDto;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -38,6 +47,8 @@ public class SbrService {
     private static final String MAP_TYPE = "0";
     private static final String DATE_FORMAT = "yyyy-MM-dd";
 
+    private final SubjectRepository subjectRepository;
+    private final ConsumptionHistoryRepository consumptionHistoryRepository;
     private final ConsumptionRepository consumptionRepository;
     private final ModelMapper mapper;
 
@@ -156,6 +167,33 @@ public class SbrService {
             return Integer.valueOf(s);
         } catch (Exception e) {
             return 0;
+        }
+    }
+
+    public void parseCsv() throws IOException {
+        File file = new File("./input/ce.csv");
+        CsvReader csvReader = new CsvReader();
+        csvReader.setContainsHeader(true);
+        csvReader.setFieldSeparator(';');
+        Integer year = 0, mouth = 0, day = 0;
+        CsvContainer csv = csvReader.read(file, StandardCharsets.UTF_8);
+        for (CsvRow row : csv.getRows()) {
+            if (!row.getField(0).isEmpty()) {
+                year = Integer.valueOf(row.getField(0));
+            }
+            if (!row.getField(1).isEmpty()) {
+                mouth = Integer.valueOf(row.getField(1));
+            }
+            day = Integer.valueOf(row.getField(2));
+            for (int index = 3; index < row.getFields().size(); index++) {
+                if (!row.getField(index).isEmpty()) {
+                    consumptionHistoryRepository.save(new ConsumptionHistory(
+                            LocalDate.of(year, mouth, day),
+                            String.valueOf(row.getFieldMap().keySet().toArray()[index]),
+                            Double.valueOf(row.getField(index))
+                    ));
+                }
+            }
         }
     }
 }
