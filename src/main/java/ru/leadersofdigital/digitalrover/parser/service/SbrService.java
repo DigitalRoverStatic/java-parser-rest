@@ -18,8 +18,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.leadersofdigital.digitalrover.parser.domain.model.ConsumptionEntity;
 import ru.leadersofdigital.digitalrover.parser.domain.model.ConsumptionHistory;
+import ru.leadersofdigital.digitalrover.parser.domain.model.OasHistoryEntity;
 import ru.leadersofdigital.digitalrover.parser.domain.repository.ConsumptionHistoryRepository;
 import ru.leadersofdigital.digitalrover.parser.domain.repository.ConsumptionRepository;
+import ru.leadersofdigital.digitalrover.parser.domain.repository.OasHistoryRepository;
 import ru.leadersofdigital.digitalrover.parser.domain.repository.SubjectRepository;
 import ru.leadersofdigital.digitalrover.parser.exception.CustomException;
 import ru.leadersofdigital.digitalrover.parser.model.SbrDto;
@@ -49,6 +51,7 @@ public class SbrService {
 
     private final SubjectRepository subjectRepository;
     private final ConsumptionHistoryRepository consumptionHistoryRepository;
+    private final OasHistoryRepository oasHistoryRepository;
     private final ConsumptionRepository consumptionRepository;
     private final ModelMapper mapper;
 
@@ -170,7 +173,7 @@ public class SbrService {
         }
     }
 
-    public void parseCsv() throws IOException {
+    public void parseCsvHistory() throws IOException {
         File file = new File("./input/ce.csv");
         CsvReader csvReader = new CsvReader();
         csvReader.setContainsHeader(true);
@@ -188,6 +191,33 @@ public class SbrService {
             for (int index = 3; index < row.getFields().size(); index++) {
                 if (!row.getField(index).isEmpty()) {
                     consumptionHistoryRepository.save(new ConsumptionHistory(
+                            LocalDate.of(year, mouth, day),
+                            String.valueOf(row.getFieldMap().keySet().toArray()[index]),
+                            Double.valueOf(row.getField(index))
+                    ));
+                }
+            }
+        }
+    }
+
+    public void parseCsvHistoryOas() throws IOException {
+        File file = new File("./input/ce.csv");
+        CsvReader csvReader = new CsvReader();
+        csvReader.setContainsHeader(true);
+        csvReader.setFieldSeparator(';');
+        Integer year = 0, mouth = 0, day = 0;
+        CsvContainer csv = csvReader.read(file, StandardCharsets.UTF_8);
+        for (CsvRow row : csv.getRows()) {
+            if (!row.getField(0).isEmpty()) {
+                year = Integer.valueOf(row.getField(0));
+            }
+            if (!row.getField(1).isEmpty()) {
+                mouth = Integer.valueOf(row.getField(1));
+            }
+            day = Integer.valueOf(row.getField(2));
+            for (int index = 3; index < row.getFields().size(); index++) {
+                if (!row.getField(index).isEmpty()) {
+                    oasHistoryRepository.save(new OasHistoryEntity(
                             LocalDate.of(year, mouth, day),
                             String.valueOf(row.getFieldMap().keySet().toArray()[index]),
                             Double.valueOf(row.getField(index))

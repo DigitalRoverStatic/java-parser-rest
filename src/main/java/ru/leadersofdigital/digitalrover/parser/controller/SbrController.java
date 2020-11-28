@@ -55,8 +55,13 @@ public class SbrController {
         );
     }
 
-    @PostMapping("/parseCsv")
+    @PostMapping("/parseCsv/history")
     public void parseCsv() throws IOException {
-        sbrService.parseCsv();
+        sbrService.parseCsvHistory();
+    }
+
+    @PostMapping("/parseCsv/history/oas")
+    public void parseCsvOas() throws IOException {
+        sbrService.parseCsvHistoryOas();
     }
 }
