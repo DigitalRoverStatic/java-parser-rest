@@ -9,9 +9,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.leadersofdigital.digitalrover.parser.domain.model.ConsumptionEntity;
+import ru.leadersofdigital.digitalrover.parser.domain.repository.ConsumptionRepository;
 import ru.leadersofdigital.digitalrover.parser.exception.CustomException;
 import ru.leadersofdigital.digitalrover.parser.model.SbrDto;
 import ru.leadersofdigital.digitalrover.parser.model.SbrNodeDto;
@@ -34,11 +37,36 @@ public class SbrService {
     private static final String SBR_MAP_REQUEST_URL = "http://br.so-ups.ru/webapi/api/map/MapPartial";
     private static final String MAP_TYPE = "0";
     private static final String DATE_FORMAT = "yyyy-MM-dd";
-    private static final String POWER_SYSTEM_ID = "550000";
+
+    private final ConsumptionRepository consumptionRepository;
+    private final ModelMapper mapper;
+
+    public void saveToDb(LocalDate localDate, Integer hour) {
+        try {
+            List<SbrDto> sbrDtos = parseOes(localDate, hour);
+            for (SbrDto sbrDto : sbrDtos) {
+                HttpResponse<JsonNode> response = getData(localDate, hour, sbrDto.getSubjectId(), sbrDto.getPowerSystemId());
+                SbrDto parsed = parse(response.getBody());
+                for (SubAreaDto subArea : parsed.getSubAreas()) {
+                    HttpResponse<JsonNode> data = getData(localDate, hour, subArea.getSubjectId(), subArea.getPowerSystemId());
+                    SbrDto sbrLvl2 = parse(data.getBody());
+                    ConsumptionEntity entity = new ConsumptionEntity();
+                    mapper.map(sbrLvl2, entity);
+                    entity.setLocalDate(localDate);
+                    entity.setHour(hour);
+                    consumptionRepository.save(entity);
+                    log.info("SAVED: " + sbrLvl2.getSubjectId());
+                }
+            }
+        } catch (UnirestException e) {
+            log.error(e.getMessage(), e);
+            throw new CustomException(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
     public SbrDto parseRoot(LocalDate localDate, Integer hour) {
         try {
-            HttpResponse<JsonNode> response = getData(localDate, hour, "");
+            HttpResponse<JsonNode> response = getData(localDate, hour, "", "");
             System.out.println(response.getBody());
             return parse(response.getBody());
         } catch (UnirestException e) {
@@ -47,9 +75,9 @@ public class SbrService {
         }
     }
 
-    public SbrDto parseSbrLvl2(LocalDate localDate, Integer hour, String subjectId) {
+    public SbrDto parseSbrLvl2(LocalDate localDate, Integer hour, String subjectId, String powerSystemId) {
         try {
-            HttpResponse<JsonNode> response = getData(localDate, hour, subjectId);
+            HttpResponse<JsonNode> response = getData(localDate, hour, subjectId, powerSystemId);
             System.out.println(response.getBody());
             return parse(response.getBody());
         } catch (UnirestException e) {
@@ -60,13 +88,13 @@ public class SbrService {
 
     public List<SbrDto> parseOes(LocalDate localDate, Integer hour) {
         try {
-            HttpResponse<JsonNode> response = getData(localDate, hour, "");
+            HttpResponse<JsonNode> response = getData(localDate, hour, "", "");
             System.out.println(response.getBody());
             SbrDto parsed = parse(response.getBody());
             List<SbrDto> result = new ArrayList<>();
             parsed.getSubAreas().parallelStream().forEach(subAreaDto -> {
                 try {
-                    HttpResponse<JsonNode> resp = getData(localDate, hour, subAreaDto.getSubjectId());
+                    HttpResponse<JsonNode> resp = getData(localDate, hour, subAreaDto.getSubjectId(), subAreaDto.getPowerSystemId());
                     result.add(parse(resp.getBody()));
                 } catch (UnirestException e) {
                     log.error(e.getMessage());
@@ -79,12 +107,12 @@ public class SbrService {
         }
     }
 
-    private HttpResponse<JsonNode> getData(LocalDate localDate, Integer hour, String subjectId) throws UnirestException {
+    private HttpResponse<JsonNode> getData(LocalDate localDate, Integer hour, String subjectId, String powerSystemId) throws UnirestException {
         return Unirest.get(SBR_MAP_REQUEST_URL)
                 .queryString("MapType", MAP_TYPE)
                 .queryString("Date", DateTimeFormatter.ofPattern(DATE_FORMAT).format(localDate))
                 .queryString("Hour", hour)
-                .queryString("PowerSystemId", POWER_SYSTEM_ID)
+                .queryString("PowerSystemId", powerSystemId)
                 .queryString("SubjectId", subjectId)
                 .asJson();
     }
@@ -93,6 +121,7 @@ public class SbrService {
         return new SbrDto(
                 (((JSONObject) jsonNode.getObject().get("MainArea")).get("SubjectId").toString()),
                 (((JSONObject) jsonNode.getObject().get("MainArea")).get("Name").toString()),
+                ((JSONObject) jsonNode.getObject().get("MainArea")).get("PowerSystemId").toString(),
                 parseInt(((JSONObject) jsonNode.getObject().get("MainArea")).get("IBR_ActualConsumption").toString().replaceAll("МВт\\*ч", "").replaceAll(" ", "")),
                 parseInt(((JSONObject) jsonNode.getObject().get("MainArea")).get("IBR_ActualGeneration").toString().replaceAll("МВт\\*ч", "").replaceAll(" ", "")),
                 parseInt(((JSONObject) jsonNode.getObject().get("MainArea")).get("IBR_AveragePrice").toString().replaceAll("руб\\./МВт\\*ч", "").replaceAll(" ", "")),
@@ -114,6 +143,7 @@ public class SbrService {
                         .map(subArea -> new SubAreaDto(
                                 ((JSONObject) subArea).get("SubjectId").toString(),
                                 ((JSONObject) subArea).get("Name").toString(),
+                                ((JSONObject) subArea).get("PowerSystemId").toString(),
                                 parseInt(((JSONObject) subArea).get("IBR_ActualConsumption").toString().replaceAll("МВт\\*ч", "").replaceAll(" ", "")),
                                 parseInt(((JSONObject) subArea).get("IBR_ActualGeneration").toString().replaceAll("МВт\\*ч", "").replaceAll(" ", "")),
                                 parseInt(((JSONObject) subArea).get("IBR_AveragePrice").toString().replaceAll("руб\\./МВт\\*ч", "").replaceAll(" ", ""))

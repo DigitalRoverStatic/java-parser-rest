@@ -11,6 +11,7 @@ import ru.leadersofdigital.digitalrover.parser.service.SbrService;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.IntStream;
 
 @RequestMapping("/sbr")
 @RequiredArgsConstructor
@@ -22,19 +23,34 @@ public class SbrController {
     @PostMapping("/parse")
     public SbrDto parse(@RequestParam @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate localDate,
                         @RequestParam Integer hour,
-                        @RequestParam String subjectId) {
-        return sbrService.parseSbrLvl2(localDate, hour, subjectId);
+                        @RequestParam String subjectId,
+                        @RequestParam String powerSystemId
+    ) {
+        return sbrService.parseSbrLvl2(localDate, hour, subjectId, powerSystemId);
     }
 
     @PostMapping("/parse/root")
     public SbrDto parseRoot(@RequestParam @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate localDate,
-                        @RequestParam Integer hour) {
+                            @RequestParam Integer hour) {
         return sbrService.parseRoot(localDate, hour);
     }
 
     @PostMapping("/parse/oes")
     public List<SbrDto> parseOes(@RequestParam @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate localDate,
-                              @RequestParam Integer hour){
+                                 @RequestParam Integer hour) {
         return sbrService.parseOes(localDate, hour);
+    }
+
+    @PostMapping("/import")
+    public void importData(@RequestParam @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate localDate,
+                           @RequestParam Integer hour) {
+        sbrService.saveToDb(localDate, hour);
+    }
+
+    @PostMapping("/import/day")
+    public void importData(@RequestParam @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate localDate) {
+        IntStream.range(0, 23).forEach(hour ->
+                sbrService.saveToDb(localDate, hour)
+        );
     }
 }

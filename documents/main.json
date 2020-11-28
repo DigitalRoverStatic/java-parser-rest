@@ -1,6 +1,6 @@
 {
   "$id": "1",
-  "Info": "Карта Ibr за 27.11.2020 22-23",
+  "Info": "Карта -1 за 28.11.2020 2-3",
   "Level": 0,
   "Height": 303,
   "Width": 579,
@@ -160,13 +160,13 @@
       "Bottom": 202,
       "Left": 33,
       "Right": 128,
-      "IBR_PlannedConsumption": "29 658 МВт*ч",
-      "IBR_ActualConsumption": "30 194 МВт*ч",
-      "IBR_PlannedGeneration": "30 090 МВт*ч",
-      "IBR_ActualGeneration": "30 853 МВт*ч",
-      "IBR_AveragePrice": " 719 руб./МВт*ч",
-      "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
+      "VSVGO_AveragePrice": "10 302 руб./МВт*ч",
+      "VSVGO_Consumption": "26 279 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "18",
@@ -189,13 +189,13 @@
       "Bottom": 302,
       "Left": 342,
       "Right": 519,
-      "IBR_PlannedConsumption": "5 067 МВт*ч",
-      "IBR_ActualConsumption": "5 134 МВт*ч",
-      "IBR_PlannedGeneration": "5 224 МВт*ч",
-      "IBR_ActualGeneration": "5 278 МВт*ч",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
       "IBR_AveragePrice": "-",
       "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "VSVGO_Consumption": "4 894 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "20",
@@ -219,13 +219,13 @@
       "Bottom": 286,
       "Left": 0,
       "Right": 86,
-      "IBR_PlannedConsumption": "12 689 МВт*ч",
-      "IBR_ActualConsumption": "12 769 МВт*ч",
-      "IBR_PlannedGeneration": "12 406 МВт*ч",
-      "IBR_ActualGeneration": "12 820 МВт*ч",
-      "IBR_AveragePrice": "1 413 руб./МВт*ч",
-      "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
+      "VSVGO_AveragePrice": "20 000 руб./МВт*ч",
+      "VSVGO_Consumption": "10 870 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "22",
@@ -248,13 +248,13 @@
       "Bottom": 218,
       "Left": 70,
       "Right": 135,
-      "IBR_PlannedConsumption": "12 706 МВт*ч",
-      "IBR_ActualConsumption": "12 728 МВт*ч",
-      "IBR_PlannedGeneration": "13 785 МВт*ч",
-      "IBR_ActualGeneration": "13 661 МВт*ч",
-      "IBR_AveragePrice": " 690 руб./МВт*ч",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
       "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "VSVGO_Consumption": "11 614 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "24",
@@ -277,13 +277,13 @@
       "Bottom": 275,
       "Left": 199,
       "Right": 424,
-      "IBR_PlannedConsumption": "24 757 МВт*ч",
-      "IBR_ActualConsumption": "25 000 МВт*ч",
-      "IBR_PlannedGeneration": "25 403 МВт*ч",
-      "IBR_ActualGeneration": "25 067 МВт*ч",
-      "IBR_AveragePrice": " 45 руб./МВт*ч",
-      "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
+      "VSVGO_AveragePrice": "18 813 руб./МВт*ч",
+      "VSVGO_Consumption": "25 773 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "26",
@@ -306,13 +306,13 @@
       "Bottom": 234,
       "Left": 106,
       "Right": 272,
-      "IBR_PlannedConsumption": "29 178 МВт*ч",
-      "IBR_ActualConsumption": "29 667 МВт*ч",
-      "IBR_PlannedGeneration": "28 615 МВт*ч",
-      "IBR_ActualGeneration": "28 325 МВт*ч",
-      "IBR_AveragePrice": " 653 руб./МВт*ч",
-      "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
+      "VSVGO_AveragePrice": "7 853 руб./МВт*ч",
+      "VSVGO_Consumption": "28 527 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "28",
@@ -336,13 +336,13 @@
       "Bottom": 147,
       "Left": 5,
       "Right": 212,
-      "IBR_PlannedConsumption": "11 564 МВт*ч",
-      "IBR_ActualConsumption": "11 594 МВт*ч",
-      "IBR_PlannedGeneration": "12 676 МВт*ч",
-      "IBR_ActualGeneration": "13 251 МВт*ч",
-      "IBR_AveragePrice": " 667 руб./МВт*ч",
-      "VSVGO_AveragePrice": "-",
-      "VSVGO_Consumption": "-",
+      "IBR_PlannedConsumption": "-",
+      "IBR_ActualConsumption": "-",
+      "IBR_PlannedGeneration": "-",
+      "IBR_ActualGeneration": "-",
+      "IBR_AveragePrice": "-",
+      "VSVGO_AveragePrice": "20 000 руб./МВт*ч",
+      "VSVGO_Consumption": "7 892 МВт",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "30",
@@ -406,7 +406,7 @@
         "Y": 173
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 642 руб./МВт*ч",
+      "Ibr": " 860 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "40",
@@ -424,7 +424,7 @@
         "Y": 158
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 646 руб./МВт*ч",
+      "Ibr": " 863 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "43",
@@ -442,7 +442,7 @@
         "Y": 181
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 630 руб./МВт*ч",
+      "Ibr": " 846 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "46",
@@ -460,7 +460,7 @@
         "Y": 184
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 639 руб./МВт*ч",
+      "Ibr": " 858 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "49",
@@ -478,7 +478,7 @@
         "Y": 198
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 642 руб./МВт*ч",
+      "Ibr": " 873 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "52",
@@ -496,7 +496,7 @@
         "Y": 195
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 659 руб./МВт*ч",
+      "Ibr": " 896 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "55",
@@ -514,7 +514,7 @@
         "Y": 195
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 656 руб./МВт*ч",
+      "Ibr": " 893 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "58",
@@ -532,7 +532,7 @@
         "Y": 207
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 643 руб./МВт*ч",
+      "Ibr": " 884 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "61",
@@ -550,7 +550,7 @@
         "Y": 197
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 645 руб./МВт*ч",
+      "Ibr": " 880 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "64",
@@ -568,7 +568,7 @@
         "Y": 209
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 660 руб./МВт*ч",
+      "Ibr": " 907 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "67",
@@ -586,7 +586,7 @@
         "Y": 207
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 661 руб./МВт*ч",
+      "Ibr": " 908 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "70",
@@ -604,7 +604,7 @@
         "Y": 194
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 664 руб./МВт*ч",
+      "Ibr": " 903 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "73",
@@ -622,7 +622,7 @@
         "Y": 198
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 640 руб./МВт*ч",
+      "Ibr": " 868 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "76",
@@ -640,7 +640,7 @@
         "Y": 195
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 672 руб./МВт*ч",
+      "Ibr": " 912 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "79",
@@ -658,7 +658,7 @@
         "Y": 179
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 670 руб./МВт*ч",
+      "Ibr": " 900 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "82",
@@ -676,7 +676,7 @@
         "Y": 179
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 669 руб./МВт*ч",
+      "Ibr": " 899 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "85",
@@ -694,7 +694,7 @@
         "Y": 194
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 669 руб./МВт*ч",
+      "Ibr": " 909 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "88",
@@ -712,7 +712,7 @@
         "Y": 201
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 642 руб./МВт*ч",
+      "Ibr": " 852 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "91",
@@ -730,7 +730,7 @@
         "Y": 173
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 670 руб./МВт*ч",
+      "Ibr": " 898 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "94",
@@ -748,7 +748,7 @@
         "Y": 157
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 649 руб./МВт*ч",
+      "Ibr": " 862 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "97",
@@ -766,7 +766,7 @@
         "Y": 167
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 644 руб./МВт*ч",
+      "Ibr": " 859 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "100",
@@ -784,7 +784,7 @@
         "Y": 167
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 648 руб./МВт*ч",
+      "Ibr": " 865 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "103",
@@ -802,7 +802,7 @@
         "Y": 172
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 680 руб./МВт*ч",
+      "Ibr": " 917 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "106",
@@ -820,7 +820,7 @@
         "Y": 152
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 691 руб./МВт*ч",
+      "Ibr": " 911 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "109",
@@ -838,7 +838,7 @@
         "Y": 162
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 646 руб./МВт*ч",
+      "Ibr": " 881 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "112",
@@ -856,7 +856,7 @@
         "Y": 160
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 650 руб./МВт*ч",
+      "Ibr": " 887 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "115",
@@ -874,7 +874,7 @@
         "Y": 161
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 650 руб./МВт*ч",
+      "Ibr": " 887 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "118",
@@ -892,7 +892,7 @@
         "Y": 166
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 648 руб./МВт*ч",
+      "Ibr": " 883 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "121",
@@ -910,7 +910,7 @@
         "Y": 165
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 648 руб./МВт*ч",
+      "Ibr": " 883 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "124",
@@ -928,7 +928,7 @@
         "Y": 146
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 652 руб./МВт*ч",
+      "Ibr": " 885 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "127",
@@ -946,7 +946,7 @@
         "Y": 134
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 655 руб./МВт*ч",
+      "Ibr": " 890 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "130",
@@ -964,7 +964,7 @@
         "Y": 223
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 649 руб./МВт*ч",
+      "Ibr": " 902 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "133",
@@ -982,7 +982,7 @@
         "Y": 157
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 639 руб./МВт*ч",
+      "Ibr": " 869 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "136",
@@ -1000,7 +1000,7 @@
         "Y": 153
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 616 руб./МВт*ч",
+      "Ibr": " 826 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "139",
@@ -1018,7 +1018,7 @@
         "Y": 164
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 636 руб./МВт*ч",
+      "Ibr": " 857 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "142",
@@ -1036,7 +1036,7 @@
         "Y": 161
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 639 руб./МВт*ч",
+      "Ibr": " 867 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "145",
@@ -1054,7 +1054,7 @@
         "Y": 167
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 647 руб./МВт*ч",
+      "Ibr": " 882 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "148",
@@ -1072,7 +1072,7 @@
         "Y": 171
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 646 руб./МВт*ч",
+      "Ibr": " 877 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "151",
@@ -1090,7 +1090,7 @@
         "Y": 161
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 640 руб./МВт*ч",
+      "Ibr": " 875 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "154",
@@ -1108,7 +1108,7 @@
         "Y": 171
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 646 руб./МВт*ч",
+      "Ibr": " 877 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "157",
@@ -1126,7 +1126,7 @@
         "Y": 187
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 637 руб./МВт*ч",
+      "Ibr": " 855 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "160",
@@ -1144,7 +1144,7 @@
         "Y": 165
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 644 руб./МВт*ч",
+      "Ibr": " 882 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "163",
@@ -1162,7 +1162,7 @@
         "Y": 184
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 644 руб./МВт*ч",
+      "Ibr": " 870 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "166",
@@ -1180,7 +1180,7 @@
         "Y": 182
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 677 руб./МВт*ч",
+      "Ibr": " 914 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "169",
@@ -1198,7 +1198,7 @@
         "Y": 192
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 666 руб./МВт*ч",
+      "Ibr": " 911 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "172",
@@ -1216,7 +1216,7 @@
         "Y": 195
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 667 руб./МВт*ч",
+      "Ibr": " 912 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "175",
@@ -1234,7 +1234,7 @@
         "Y": 190
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 668 руб./МВт*ч",
+      "Ibr": " 913 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "178",
@@ -1252,7 +1252,7 @@
         "Y": 199
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 642 руб./МВт*ч",
+      "Ibr": " 886 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "181",
@@ -1270,7 +1270,7 @@
         "Y": 198
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 647 руб./МВт*ч",
+      "Ibr": " 893 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "184",
@@ -1288,7 +1288,7 @@
         "Y": 200
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 642 руб./МВт*ч",
+      "Ibr": " 886 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "187",
@@ -1306,7 +1306,7 @@
         "Y": 191
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 665 руб./МВт*ч",
+      "Ibr": " 904 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "190",
@@ -1324,7 +1324,7 @@
         "Y": 184
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 694 руб./МВт*ч",
+      "Ibr": " 919 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "193",
@@ -1342,7 +1342,7 @@
         "Y": 189
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 681 руб./МВт*ч",
+      "Ibr": " 925 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "196",
@@ -1360,7 +1360,7 @@
         "Y": 182
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 682 руб./МВт*ч",
+      "Ibr": " 925 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "199",
@@ -1378,7 +1378,7 @@
         "Y": 172
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 687 руб./МВт*ч",
+      "Ibr": " 927 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "202",
@@ -1396,7 +1396,7 @@
         "Y": 179
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 681 руб./МВт*ч",
+      "Ibr": " 923 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "205",
@@ -1414,7 +1414,7 @@
         "Y": 167
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 695 руб./МВт*ч",
+      "Ibr": " 933 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "208",
@@ -1432,7 +1432,7 @@
         "Y": 215
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 842 руб./МВт*ч",
+      "Ibr": " 994 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "211",
@@ -1450,7 +1450,7 @@
         "Y": 221
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 612 руб./МВт*ч",
+      "Ibr": " 878 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "214",
@@ -1468,7 +1468,7 @@
         "Y": 237
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "1 605 руб./МВт*ч",
+      "Ibr": "1 338 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "217",
@@ -1486,7 +1486,7 @@
         "Y": 229
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "1 193 руб./МВт*ч",
+      "Ibr": "1 183 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "220",
@@ -1504,7 +1504,7 @@
         "Y": 240
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": "1 652 руб./МВт*ч",
+      "Ibr": "1 375 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "223",
@@ -1522,7 +1522,7 @@
         "Y": 247
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "1 865 руб./МВт*ч",
+      "Ibr": "1 736 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "226",
@@ -1540,7 +1540,7 @@
         "Y": 104
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 687 руб./МВт*ч",
+      "Ibr": " 876 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "229",
@@ -1558,7 +1558,7 @@
         "Y": 145
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 711 руб./МВт*ч",
+      "Ibr": " 917 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "232",
@@ -1576,7 +1576,7 @@
         "Y": 147
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 715 руб./МВт*ч",
+      "Ibr": " 925 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "235",
@@ -1594,7 +1594,7 @@
         "Y": 148
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 714 руб./МВт*ч",
+      "Ibr": " 928 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "238",
@@ -1612,7 +1612,7 @@
         "Y": 149
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 701 руб./МВт*ч",
+      "Ibr": " 916 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "241",
@@ -1630,7 +1630,7 @@
         "Y": 149
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 726 руб./МВт*ч",
+      "Ibr": " 928 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "244",
@@ -1648,7 +1648,7 @@
         "Y": 156
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 723 руб./МВт*ч",
+      "Ibr": " 925 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "247",
@@ -1666,7 +1666,7 @@
         "Y": 151
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 724 руб./МВт*ч",
+      "Ibr": " 927 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "250",
@@ -1684,7 +1684,7 @@
         "Y": 149
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 724 руб./МВт*ч",
+      "Ibr": " 927 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "253",
@@ -1702,7 +1702,7 @@
         "Y": 152
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 702 руб./МВт*ч",
+      "Ibr": " 916 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "256",
@@ -1720,7 +1720,7 @@
         "Y": 142
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 700 руб./МВт*ч",
+      "Ibr": " 914 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "259",
@@ -1738,7 +1738,7 @@
         "Y": 143
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 701 руб./МВт*ч",
+      "Ibr": " 920 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "262",
@@ -1756,7 +1756,7 @@
         "Y": 139
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 709 руб./МВт*ч",
+      "Ibr": " 915 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "265",
@@ -1774,7 +1774,7 @@
         "Y": 134
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 707 руб./МВт*ч",
+      "Ibr": " 912 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "268",
@@ -1792,7 +1792,7 @@
         "Y": 127
       },
       "Name": "Генератор (U = 750 кВ)",
-      "Ibr": " 684 руб./МВт*ч",
+      "Ibr": " 882 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "271",
@@ -1810,7 +1810,7 @@
         "Y": 158
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 674 руб./МВт*ч",
+      "Ibr": " 860 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "274",
@@ -1828,7 +1828,7 @@
         "Y": 172
       },
       "Name": "Генератор (U = 750 кВ)",
-      "Ibr": " 661 руб./МВт*ч",
+      "Ibr": " 844 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "277",
@@ -1846,7 +1846,7 @@
         "Y": 177
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 699 руб./МВт*ч",
+      "Ibr": " 898 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "280",
@@ -1864,7 +1864,7 @@
         "Y": 176
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 704 руб./МВт*ч",
+      "Ibr": " 905 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "283",
@@ -1882,7 +1882,7 @@
         "Y": 173
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 695 руб./МВт*ч",
+      "Ibr": " 891 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "286",
@@ -1900,7 +1900,7 @@
         "Y": 187
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 682 руб./МВт*ч",
+      "Ibr": " 873 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "289",
@@ -1918,7 +1918,7 @@
         "Y": 182
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 682 руб./МВт*ч",
+      "Ibr": " 872 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "292",
@@ -1936,7 +1936,7 @@
         "Y": 185
       },
       "Name": "Потребитель (U = 750 кВ)",
-      "Ibr": " 676 руб./МВт*ч",
+      "Ibr": " 864 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "295",
@@ -1954,7 +1954,7 @@
         "Y": 180
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 705 руб./МВт*ч",
+      "Ibr": " 912 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "298",
@@ -1972,7 +1972,7 @@
         "Y": 128
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 699 руб./МВт*ч",
+      "Ibr": " 903 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "301",
@@ -1990,7 +1990,7 @@
         "Y": 124
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 691 руб./МВт*ч",
+      "Ibr": " 892 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "304",
@@ -2008,7 +2008,7 @@
         "Y": 166
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 712 руб./МВт*ч",
+      "Ibr": " 913 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "307",
@@ -2026,7 +2026,7 @@
         "Y": 163
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 716 руб./МВт*ч",
+      "Ibr": " 917 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "310",
@@ -2044,7 +2044,7 @@
         "Y": 151
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 712 руб./МВт*ч",
+      "Ibr": " 908 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "313",
@@ -2062,7 +2062,7 @@
         "Y": 214
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 502 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "316",
@@ -2080,7 +2080,7 @@
         "Y": 219
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 502 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "319",
@@ -2098,7 +2098,7 @@
         "Y": 215
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 10 руб./МВт*ч",
+      "Ibr": " 473 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "322",
@@ -2116,7 +2116,7 @@
         "Y": 215
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 10 руб./МВт*ч",
+      "Ibr": " 479 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "325",
@@ -2134,7 +2134,7 @@
         "Y": 215
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 10 руб./МВт*ч",
+      "Ibr": " 479 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "328",
@@ -2152,7 +2152,7 @@
         "Y": 214
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 494 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "331",
@@ -2170,7 +2170,7 @@
         "Y": 246
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 5 руб./МВт*ч",
+      "Ibr": " 478 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "334",
@@ -2188,7 +2188,7 @@
         "Y": 234
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "-",
+      "Ibr": " 448 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "337",
@@ -2206,7 +2206,7 @@
         "Y": 227
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "-",
+      "Ibr": " 450 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "340",
@@ -2224,7 +2224,7 @@
         "Y": 230
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": "-",
+      "Ibr": " 451 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "343",
@@ -2242,7 +2242,7 @@
         "Y": 215
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 738 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "346",
@@ -2260,7 +2260,7 @@
         "Y": 227
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 736 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "349",
@@ -2278,7 +2278,7 @@
         "Y": 233
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 738 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "352",
@@ -2296,7 +2296,7 @@
         "Y": 209
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 521 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "355",
@@ -2314,7 +2314,7 @@
         "Y": 233
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 12 руб./МВт*ч",
+      "Ibr": " 760 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "358",
@@ -2332,7 +2332,7 @@
         "Y": 235
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 12 руб./МВт*ч",
+      "Ibr": " 760 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "361",
@@ -2350,7 +2350,7 @@
         "Y": 250
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 19 руб./МВт*ч",
+      "Ibr": " 795 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "364",
@@ -2368,7 +2368,7 @@
         "Y": 219
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 14 руб./МВт*ч",
+      "Ibr": " 820 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "367",
@@ -2386,7 +2386,7 @@
         "Y": 216
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 2 руб./МВт*ч",
+      "Ibr": " 444 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "370",
@@ -2404,7 +2404,7 @@
         "Y": 213
       },
       "Name": "Генератор (U = 500 кВ)",
-      "Ibr": "-",
+      "Ibr": " 442 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "373",
@@ -2422,7 +2422,7 @@
         "Y": 215
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 9 руб./МВт*ч",
+      "Ibr": " 454 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "376",
@@ -2440,7 +2440,7 @@
         "Y": 235
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 500 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "379",
@@ -2458,7 +2458,7 @@
         "Y": 235
       },
       "Name": "Потребитель (U = 500 кВ)",
-      "Ibr": " 11 руб./МВт*ч",
+      "Ibr": " 495 руб./МВт*ч",
       "Selected": false,
       "InfoCoordinates": {
         "$id": "382",

@@ -18,6 +18,8 @@ public class SbrDto {
 
     private String name;
 
+    private String powerSystemId;
+
     @Parameter(description = "МВт*ч")
     private Integer IBR_ActualConsumption;
 
