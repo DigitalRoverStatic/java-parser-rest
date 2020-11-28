@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./script/jquery-3.5.1.min.js"></script>
+    <script src="./script/jquery_canvasjs.min.js"></script>
+    <script src="./script/plotly-latest.min.js"></script>
+    <script src="./script/Filesave.min.js"></script>
+    <script src="./script/data.js"></script>
+    <script>
+        window.onload = function () {
+            let regionIndex = Number(new URLSearchParams(window.location.search).get('regionIndex'));
+
+            let f = [];
+            for (let i = 0; i < c.index.length; i++) {
+                let y = c.data[i].vvp * v.koef[regionIndex].vvp_ipc_koef[1] +
+                    c.data[i].ipc * v.koef[regionIndex].vvp_ipc_koef[0] +
+                    v.koef[regionIndex].vvp_ipc_koef[2]
+                f.push({
+                    x: c.index[i],
+                    y: y
+                });
+            }
+
+            let chart = new CanvasJS.Chart("region",
+                {
+                    // animationEnabled: true,
+                    // zoomEnabled: true,
+                    theme: "dark1",
+                    backgroundColor: "#262936",
+                    axisX: {
+                        valueFormatString: "###0.",
+                    },
+                    axisY: {
+                        valueFormatString: "###0.",
+                    },
+                    title: {
+                        text: "Прогноз потребления в " + v.koef[regionIndex].region
+                    },
+                    data: [{
+                        type: "line",
+                        lineThickness: 3,
+                        lineColor: "#8673ED",
+                        markerColor: "#8673ED",
+                        dataPoints: f
+                    }]
+                });
+
+            chart.render();
+
+            let base64Image = chart.canvas.toDataURL();
+
+            function dataURLtoFile(dataurl, filename) {
+                var arr = dataurl.split(','),
+                    mime = arr[0].match(/:(.*?);/)[1],
+                    bstr = atob(arr[1]),
+                    n = bstr.length,
+                    u8arr = new Uint8Array(n);
+
+                while (n--) {
+                    u8arr[n] = bstr.charCodeAt(n);
+                }
+
+                return new File([u8arr], filename, {type: mime});
+            }
+
+            //Usage example:
+            let file = dataURLtoFile(base64Image, 'g.png');
+            console.log(file);
+
+            saveAs(file, "region" + regionIndex + ".png");
+        }
+    </script>
+</head>
+<body>
+<div id="region" style='height: 270px; width: 490px;'></div>
+</body>
+</html>
